@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// admin routes
+require_once('admin.php');
+
 
 Route::get('/', function () {
     return view('user.home');
