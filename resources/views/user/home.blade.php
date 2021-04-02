@@ -14,7 +14,11 @@
                      <div class="carousel-container">
                          <div class="carousel-content">
                              <h2 class="animate__animated animate__fadeInDown"><span>Luxury </span> coffee</h2>
-                             <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                             <p class="animate__animated animate__fadeInUp">
+                                Mơ ước của chúng tôi chính là tạo một kết nối giữa hương vị cà phê Việt Nam và những hương vị đặc biệt khác. 
+                                Mỗi một ly cà phê là một điều bất ngờ về hương vị và kết cấu, được làm nên từ những nguyên liệu vốn rất gần gũi với cuộc sống.
+                                Dòng sản phẩm này được làm từ những hạt cà phê thơm ngon từ vùng đất cao nguyên. Hứa hẹn mang lại cho bạn hương vị độc đáo từ những sự kết hợp đặc biệt này
+                             </p>
                              <div>
                                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
                                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Events</a>
@@ -28,7 +32,11 @@
                      <div class="carousel-container">
                          <div class="carousel-content">
                              <h2 class="animate__animated animate__fadeInDown">our coffee</h2>
-                             <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                             <p class="animate__animated animate__fadeInUp">
+                                Mơ ước của chúng tôi chính là tạo một kết nối giữa hương vị cà phê Việt Nam và những hương vị đặc biệt khác. 
+                                Mỗi một ly cà phê là một điều bất ngờ về hương vị và kết cấu, được làm nên từ những nguyên liệu vốn rất gần gũi với cuộc sống.
+                                Dòng sản phẩm này được làm từ những hạt cà phê thơm ngon từ vùng đất cao nguyên. Hứa hẹn mang lại cho bạn hương vị độc đáo từ những sự kết hợp đặc biệt này
+                             </p>
                              <div>
                                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
                                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Event</a>
@@ -43,7 +51,11 @@
                      <div class="carousel-container">
                          <div class="carousel-content">
                              <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                             <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                             <p class="animate__animated animate__fadeInUp">
+                                Mơ ước của chúng tôi chính là tạo một kết nối giữa hương vị cà phê Việt Nam và những hương vị đặc biệt khác. 
+                                Mỗi một ly cà phê là một điều bất ngờ về hương vị và kết cấu, được làm nên từ những nguyên liệu vốn rất gần gũi với cuộc sống.
+                                Dòng sản phẩm này được làm từ những hạt cà phê thơm ngon từ vùng đất cao nguyên. Hứa hẹn mang lại cho bạn hương vị độc đáo từ những sự kết hợp đặc biệt này
+                             </p>
                              <div>
                                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
                                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
@@ -83,23 +95,22 @@
                  <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
                      <div class="content">
-                         <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                         <h3>Những nguyên tắc chúng tôi luôn <strong> đặt lên hàng đầu để đảm bảo hương vị tinh nguyên gửi đến khách hàng. </strong></h3>
                          <p>
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                            Những hạt cà phê đều được lựa chọn khắt khe từ trái chín của mùa vụ mới nhất, được thu hái hoàn toàn bằng tay, đạt tỉ lệ trái chín chiếm tới hơn 95% thu hoạch. 
+                            
                          </p>
                          <p class="font-italic">
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                             magna aliqua.
+                            Công thức rang và phối trộn hạt Arabica và Robusta của The Coffee tạo nên một tổng thể cân bằng của vị đắng, ngọt, chua, giúp cà phê đậm thanh, thơm hương.
+                         
                          </p>
                          <ul>
-                             <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                             <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                             <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                             <li><i class="bx bx-check-double"></i> Hạt ARABICA xuất xứ ở Cầu Đất, thổ nhưỡng để trồng được hạt cà phê Arabica ngon nhất Việt Nam. </li>
+                             <li><i class="bx bx-check-double"></i> Hạt ROBUSTA được chọn lọc từ từ Tây Nguyên (Đak Lak, Gia Lai, Lâm Đồng).</li>
+                             <li><i class="bx bx-check-double"></i> Hạt cà phê Da Lat được nuôi dưỡng tự nhiên tại Đà Lạt.</li>
                          </ul>
                          <p>
-                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                             culpa qui officia deserunt mollit anim id est laborum
+                            Điều kiện khắc nghiệt khác nhau sẽ mang đến những hương vị với cung bậc cảm xúc khác nhau. The Coffee gửi bạn chút thơm đượm và chua thanh cao, chút ngọt đắng đậm màu
                          </p>
                      </div>
 
@@ -116,7 +127,7 @@
 
              <div class="section-title">
                  <h2>Why choose <span>Our Coffee</span></h2>
-                 <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+                 <p>Tại The Coffee, chúng tôi luôn trân trọng những câu chuyện và đề cao giá trị Kết nối con người. Chúng tôi mong muốn The Coffee sẽ trở thành “Nhà Cà Phê", nơi mọi người xích lại gần nhau và tìm thấy niềm vui, sự thân tình bên những tách cà phê đượm hương, chất lượng.</p>
              </div>
 
              <div class="row">
@@ -124,26 +135,32 @@
                  <div class="col-lg-4">
                      <div class="box">
                          <span>01</span>
-                         <h4>Lorem Ipsum</h4>
-                         <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+                         <h4>CHÂN THÀNH</h4>
+                         <p>Bắt đầu từ sứ mệnh “Deliver Happiness” - Trao gửi hạnh phúc, tất cả mọi người đến với The Coffee
+                            đều nhận được những niềm vui nho nhỏ và làm người khác tốt lên từng ngày.</p>
                      </div>
                  </div>
 
                  <div class="col-lg-4 mt-4 mt-lg-0">
                      <div class="box">
                          <span>02</span>
-                         <h4>Repellat Nihil</h4>
-                         <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+                         <h4>QUAN TÂM</h4>
+                         <p>Mỗi sản phẩm, chiến dịch của The Coffee luôn xoay quanh con người.
+                            Chúng tôi lấy khách hàng, nhân viên và cộng đồng làm trọng tâm cho mọi quyết định. 
+                        </p>
                      </div>
                  </div>
 
                  <div class="col-lg-4 mt-4 mt-lg-0">
-                     <div class="box">
+                     <div class="box" >
                          <span>03</span>
-                         <h4> Ad ad velit qui</h4>
-                         <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+                         <h4>SÁNG TẠO</h4>
+                         <p>Chúng tôi muốn tạo ra dấu ấn khác biệt cho cà phê Việt Nam bằng sự tử tế và cẩn trọng. Bạn là động lực giúp chúng tôi đổi mới mỗi ngày 
+                            để mang lại những sản phẩm tuyệt vời nhất.</p>
                      </div>
                  </div>
+
+                 
 
              </div>
 
@@ -262,28 +279,27 @@
          <div class="container">
 
              <div class="section-title">
-                 <h2>Check our <span>Specials</span></h2>
-                 <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+                 <h2>Nghệ thuật <span>pha chế </span></h2>
+                 <p>Điều quan trọng nhất để được thưởng thức một ly cà phê thơm ngon chính là quá trình pha chế
+                </p>
              </div>
 
              <div class="row">
                  <div class="col-lg-3">
                      <ul class="nav nav-tabs flex-column">
                          <li class="nav-item">
-                             <a class="nav-link active show" data-toggle="tab" href="#tab-1">Modi sit est</a>
+                             <a class="nav-link active show" data-toggle="tab" href="#tab-1">Phin Việt Nam</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link" data-toggle="tab" href="#tab-2">Unde praesentium sed</a>
+                             <a class="nav-link" data-toggle="tab" href="#tab-2">Espresso</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link" data-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
+                             <a class="nav-link" data-toggle="tab" href="#tab-3">Hand Drew </a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link" data-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
+                             <a class="nav-link" data-toggle="tab" href="#tab-4">Cold Brew</a>
                          </li>
-                         <li class="nav-item">
-                             <a class="nav-link" data-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
-                         </li>
+                         
                      </ul>
                  </div>
                  <div class="col-lg-9 mt-4 mt-lg-0">
@@ -291,9 +307,12 @@
                          <div class="tab-pane active show" id="tab-1">
                              <div class="row">
                                  <div class="col-lg-8 details order-2 order-lg-1">
-                                     <h3>Architecto ut aperiam autem id</h3>
-                                     <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                                     <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                                     <h3>Pha phin là cách pha chế (chiết xuất) cà phê lâu đời và độc đáo của người Việt. </h3>
+                                     <p class="font-italic">Đáy phin được thiết kế có nhiều lỗ nhỏ li ti, chỉ vừa đủ cho dòng nước cà phê nhỏ giọt đi qua. </p>
+                                     <p>
+                                        Cà phê pha phin toát ra vẹn tròn tinh túy của cà phê, vị đậm nồng nàn, hương thơm say mê.
+
+                                     </p>
                                  </div>
                                  <div class="col-lg-4 text-center order-1 order-lg-2">
                                      <img src="assets/img/specials-1.jpg" alt="" class="img-fluid">
@@ -303,9 +322,9 @@
                          <div class="tab-pane" id="tab-2">
                              <div class="row">
                                  <div class="col-lg-8 details order-2 order-lg-1">
-                                     <h3>Et blanditiis nemo veritatis excepturi</h3>
-                                     <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                                     <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                                     <h3>Một tách Latte phảng phất hương vị cà phê là cách bạn "lay nhẹ" bản thân trước khi bắt đầu một ngày dài làm việc.</h3>
+                                     <p class="font-italic">Cappuccino được gọi vui là thức uống "một-phần-ba" - 1/3 Espresso, 1/3 Sữa nóng, 1/3 Foam.</p>
+                                     <p>Espresso có nguồn gốc từ Ý, là nguyên liệu cốt để biến tấu nên các món cà phê phổ biến như Cappuccino, Latte và Americano</p>
                                  </div>
                                  <div class="col-lg-4 text-center order-1 order-lg-2">
                                      <img src="assets/img/specials-2.jpg" alt="" class="img-fluid">
@@ -315,9 +334,9 @@
                          <div class="tab-pane" id="tab-3">
                              <div class="row">
                                  <div class="col-lg-8 details order-2 order-lg-1">
-                                     <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                                     <p class="font-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                                     <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                                     <h3>Kalita Wave giúp giữ tốc độ chảy đều đặn và nhiệt độ ổn định, cho vị cà phê thêm cân bằng và nồng nàn.</h3>
+                                     <p class="font-italic">Cách pha sử dụng V60 trích xuất được gần như hoàn chỉnh hương vị, nổi bật lên vị chua nhẹ của cà phê.</p>
+                                     <p>Aeropress là cách pha không rập khuôn, hương vị cà phê sẽ sống động tùy theo dấu ấn của Barista, hoặc khẩu vị của bạn.</p>
                                  </div>
                                  <div class="col-lg-4 text-center order-1 order-lg-2">
                                      <img src="assets/img/specials-3.jpg" alt="" class="img-fluid">
@@ -327,27 +346,18 @@
                          <div class="tab-pane" id="tab-4">
                              <div class="row">
                                  <div class="col-lg-8 details order-2 order-lg-1">
-                                     <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                                     <p class="font-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                                     <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                                     <h3>Xu hướng cà phê hiện đại.</h3>
+                                     <p class="font-italic">Cold Brew (Cold: lạnh, Brew: pha, nôm na là Cà phê pha lạnh) 
+                                        là cách pha cà phê bằng nước ở nhiệt độ bằng hoặc thấp hơn nhiệt độ phòng, 
+                                        thay vì dùng nước nóng đun sôi như cách pha cà phê truyền thống bằng nước nóng ("Hot Brew"). </p>
+                                     <p>Vị cho ra được đánh giá là “smooth”, “clean”, “fresh” và tốt cho sức khỏe người dùng hơn.</p>
                                  </div>
                                  <div class="col-lg-4 text-center order-1 order-lg-2">
                                      <img src="assets/img/specials-4.jpg" alt="" class="img-fluid">
                                  </div>
                              </div>
                          </div>
-                         <div class="tab-pane" id="tab-5">
-                             <div class="row">
-                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                     <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                                     <p class="font-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                                     <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                                 </div>
-                                 <div class="col-lg-4 text-center order-1 order-lg-2">
-                                     <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
-                                 </div>
-                             </div>
-                         </div>
+                         
                      </div>
                  </div>
              </div>
@@ -360,7 +370,7 @@
          <div class="container">
 
              <div class="section-title">
-                 <h2>Organize Your <span>Events</span> in our Coffee</h2>
+                 <h2><span>Không gian và món ăn</span></h2>
              </div>
 
              <div class="owl-carousel events-carousel">
@@ -370,23 +380,20 @@
                          <img src="{{asset('user//img/event-birthday.jpg')}}" class="img-fluid" alt="">
                      </div>
                      <div class="col-lg-6 pt-4 pt-lg-0 content">
-                         <h3>Birthday Parties</h3>
+                         <h3>  </h3>
                          <div class="price">
-                             <p><span>$189</span></p>
+                             <p><span></span></p>
                          </div>
                          <p class="font-italic">
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                             magna aliqua.
+                            Các món nước và bánh ngoài việc được pha chế thơm ngon và vô cùng công phu, còn được ghi điểm bởi cách trang trí khá độc đáo và lạ mắt, 
+chắc chắn sẽ chiều lòng ngay cả những vị khách khó tính nhất. 
                          </p>
                          <ul>
-                             <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                             <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                             <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                             <li><i class="icofont-check-circled"></i> Không gian quán chia thành nhiều góc nhỏ để bạn có thể chọn cho mình một vị trí ngồi thoải mái nhất. </li>
+                             <li><i class="icofont-check-circled"></i>Bạn có thể chọn một góc riêng tư hay muốn ngắm nhìn phố xá bên khung cửa, hoặc góc bàn đủ rộng để tám chuyện cùng bè bạn.</li>
+                             <li><i class="icofont-check-circled"></i> Bất kì là vị trí nào, The Coffee đều có thể mang đến bạn những trải nghiệm thú vị và khác biệt.</li>
                          </ul>
-                         <p>
-                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                             velit esse cillum dolore eu fugiat nulla pariatur
-                         </p>
+                         
                      </div>
                  </div>
 
@@ -395,23 +402,21 @@
                          <img src="{{asset('user/img/event-private.jpg')}}" class="img-fluid" alt="">
                      </div>
                      <div class="col-lg-6 pt-4 pt-lg-0 content">
-                         <h3>Private Parties</h3>
+                         <h3>  </h3>
                          <div class="price">
-                             <p><span>$290</span></p>
+                             <p><span></span></p>
                          </div>
                          <p class="font-italic">
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                             magna aliqua.
+                            Không gian Santorino The Coffee mang màu sắc vintage nhưng lại được định vị rõ ràng bởi phong cách tự do, phóng khoáng 
+                            Không bị nhàm chán hay trùng lặp theo kiểu thường thấy. 
                          </p>
                          <ul>
-                             <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                             <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                             <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                             <li><i class="icofont-check-circled"></i> Nếu bạn là tuýp người yêu thích vẻ đẹp mộc mạc pha lẫn một chút phiêu linh trong cách thể hiện thì đây chính là nơi dành cho bạn. </li>
+                             <li><i class="icofont-check-circled"></i>Cũng vẫn những chiếc ghế, chiếc bàn đi cùng tông với những bức vẽ, nhưng chính trong cách sắp đặt đầy ngẫu hứng này, 
+                                bạn sẽ tìm thấy chút bất ngờ như khi khám phá ra một điều gì đó quá đỗi giản dị và bình lặng giữa những ồn ã thường ngày. </li>
+     
                          </ul>
-                         <p>
-                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                             velit esse cillum dolore eu fugiat nulla pariatur
-                         </p>
+                        
                      </div>
                  </div>
 
@@ -420,23 +425,21 @@
                          <img src="{{asset('user/img/event-custom.jpg')}}" class="img-fluid" alt="">
                      </div>
                      <div class="col-lg-6 pt-4 pt-lg-0 content">
-                         <h3>Custom Parties</h3>
+                         <h3>   </h3>
                          <div class="price">
-                             <p><span>$99</span></p>
+                             <p><span></span></p>
                          </div>
                          <p class="font-italic">
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                             magna aliqua.
+                            The Coffee là không gian cà phê rộng rãi, không chỉ phù hợp để nhóm bạn bè trò chuyện tán gẫu, mà còn dành riêng cho bạn một không gian yên tĩnh.
+                            Phù hợp với dân công sở ghé đến để làm việc.
                          </p>
                          <ul>
-                             <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                             <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                             <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                             <li><i class="icofont-check-circled"></i> Dành thời gian nhâm nhi tách cà phê, một vài chiếc bánh ngọt nhỏ xinh và đọc sách, đảm bảo bạn sẽ cảm thấy yêu hơn những giờ làm việc mà không lo nhàm chán.
+                  </li>
+                             <li><i class="icofont-check-circled"></i> The Coffee còn là studio chụp ảnh tuyệt vời cho những hội mê sống ảo.</li>
+                             <li><i class="icofont-check-circled"></i> Vì thế khi muốn tìm một nơi đảm bảo sự bình yên để chạy hết mới deadline thì hãy nhớ đến The Coffee.</li>
                          </ul>
-                         <p>
-                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                             velit esse cillum dolore eu fugiat nulla pariatur
-                         </p>
+                         
                      </div>
                  </div>
 
@@ -451,7 +454,8 @@
 
              <div class="section-title">
                  <h2>Book a <span>Table</span></h2>
-                 <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+                 <p>Bạn muốn đặt bàn trước để giữu chỗ, hãy liên hệ với chúng tôi qua Hotline: 1900 1010. Hoặc gửi tin nhắn yêu cầu cho chúng tôi theo mẫu sau. 
+                </p>
              </div>
 
              <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
