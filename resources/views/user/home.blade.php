@@ -13,8 +13,8 @@
                  <div class="carousel-item active" style="background: url(user/img/slide/slide-1.jpg);">
                      <div class="carousel-container">
                          <div class="carousel-content">
-                             <h2 class="animate__animated animate__fadeInDown"><span>Luxury </span> coffee</h2>
-                             <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                             <h2 class="animate__animated animate__fadeInDown"><span> Mabel </span> Coffee</h2>
+                             <p class="animate__animated animate__fadeInUp">Cà phê không hỏi những câu hỏi ngu ngốc. Cà phê hiểu ta.</p>
                              <div>
                                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
                                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Events</a>
@@ -27,8 +27,8 @@
                  <div class="carousel-item" style="background: url(user/img/slide/slide-2.jpg);">
                      <div class="carousel-container">
                          <div class="carousel-content">
-                             <h2 class="animate__animated animate__fadeInDown">our coffee</h2>
-                             <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                             <h2 class="animate__animated animate__fadeInDown">Thậm chí cà phê tồi cũng còn tốt hơn là không có cà phê</h2>
+                             <p class="animate__animated animate__fadeInUp">Chúng ta muốn làm nhiều chuyện; chúng ta không sung sức lắm. Chúng ta không có giấc ngủ ngon. Chúng ta hơi rầu rĩ. Cà phê giải quyết tất cả những rắc rối đó trong một tách ngon lành.</p>
                              <div>
                                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
                                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Event</a>
@@ -42,8 +42,8 @@
                      <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
                      <div class="carousel-container">
                          <div class="carousel-content">
-                             <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                             <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                             <h2 class="animate__animated animate__fadeInDown">Cà phê không chỉ là một loại đồ uống</h2>
+                             <p class="animate__animated animate__fadeInUp">Nó là thứ gì đó đang xảy ra. Không phải mốt thời thượng, mà giống như một sự kiện, một nơi để đến, nhưng không giống như một địa điểm, mà giống như nơi nào đó bên trong bản thân. Nó cho bạn thời gian, nhưng không phải thực sự là giờ và phút, mà một cơ hội để làm chính mình, và uống cốc thứ hai.</p>
                              <div>
                                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
                                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Event</a>
@@ -83,23 +83,21 @@
                  <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
                      <div class="content">
-                         <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                         <h3>Drink coffee  <strong> to understand, to know, to love…</strong></h3>
                          <p>
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                         Cà phê ngon là cà phê mình uống thấy ngon thì dù cà phê chỗ khác có nổi tiếng đến mấy cũng không như cái gọi là cà phê của mình.
                          </p>
                          <p class="font-italic">
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                             magna aliqua.
+                         Cà phê mộc hay cà phê có hương liệu, mỗi loại có một hương vị riêng.
                          </p>
                          <ul>
-                             <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                             <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                             <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                             <li><i class="bx bx-check-double"></i> Cà phê khiến ta mạnh mẽ, nghiêm nghị và thông thái.</li>
+                             <li><i class="bx bx-check-double"></i> Cà phê là thứ tốt nhất để giội lên bình minh.</li>
+                             <li><i class="bx bx-check-double"></i> Cà phê là một cách ăn cắp thời gian mà theo quyền của chính bạn.</li>
                          </ul>
                          <p>
-                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                             culpa qui officia deserunt mollit anim id est laborum
+                         Cái ngon là khi thưởng thức, tâm trạng của người thưởng thức, lần đầu thưởng thức (chưa thưởng thức) rất lạ lẫm, như khám phá ra một người bạn, một tâm hồn, khám phá địa điểm, nhiệt tình, phát hiện mình có hợp với mình hay không ...
+
                          </p>
                      </div>
 
@@ -116,7 +114,7 @@
 
              <div class="section-title">
                  <h2>Why choose <span>Our Coffee</span></h2>
-                 <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+                 <p>Tại Coffee Mabel, chúng tôi luôn phấn đấu để trở thành người tốt nhất. Chúng tôi thực sự đam mê cà phê. Chúng tôi tin rằng một tách cà phê tuyệt vời bắt đầu từ sự pha trộn phức tạp của những hạt cà phê tốt nhất.</p>
              </div>
 
              <div class="row">
@@ -124,24 +122,24 @@
                  <div class="col-lg-4">
                      <div class="box">
                          <span>01</span>
-                         <h4>Lorem Ipsum</h4>
-                         <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+                         <h4>Không gian</h4>
+                         <p>Quán có nhiều cửa sổ nên căn phòng luôn tràn ngập ánh sáng. Không gian rộng, hệ thống ánh sáng ổn nên cà phê này rất thích hợp cho các bạn mê check-in. Bên cạnh đó, nó cũng phù hợp cho công việc và học tập.</p>
                      </div>
                  </div>
 
                  <div class="col-lg-4 mt-4 mt-lg-0">
                      <div class="box">
                          <span>02</span>
-                         <h4>Repellat Nihil</h4>
-                         <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+                         <h4> Thức uống </h4>
+                         <p>Cà phê là thức uống chính. Ngoài ra còn một số thức uống khác như các loại trà, trà sữa, nhiều loại topping ... Giá cả hợp lý cho mọi lứa tuổi.</p>
                      </div>
                  </div>
 
                  <div class="col-lg-4 mt-4 mt-lg-0">
                      <div class="box">
                          <span>03</span>
-                         <h4> Ad ad velit qui</h4>
-                         <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+                         <h4> Nhân viên phục vụ </h4>
+                         <p>Nhân viên thân thiện, phục vụ chuyên nghiệp. Chăm sóc theo sở thích của khách hàng.</p>
                      </div>
                  </div>
 
