@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\User\ProductController;
+use App\Http\Controllers\User\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +16,4 @@ use App\Http\Controllers\User\ProductController;
 // admin routes
 require_once('admin.php');
 
-Route::get('/', [ProductController::class, 'index'])->name('index');
+Route::get('/', [HomeController::class, 'index'])->name('index');

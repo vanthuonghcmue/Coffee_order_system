@@ -9,6 +9,8 @@ Route::get('/dashboard', function () {
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::prefix('categories')->name('categories.')->group(function () {
+        Route::get('/create', [CategoryController::class, 'create'])->name('create');
+        Route::post('/create', [CategoryController::class, 'store'])->name('store');
         Route::get('/', [CategoryController::class, 'index'])->name('index');
     });
 });

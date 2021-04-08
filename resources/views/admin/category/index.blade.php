@@ -1,6 +1,22 @@
 @extends('layouts.admin')
 @section('content')
 <!-- BEGIN PAGE HEADER-->
+<h3 class="page-title">
+  Category <small>Category listing</small>
+</h3>
+<div class="page-bar">
+  <ul class="page-breadcrumb">
+    <li>
+      <i class="fa fa-home"></i>
+      <a href="index.html">Home</a>
+      <i class="fa fa-angle-right"></i>
+    </li>
+    <li>
+      <a href="{{route('admin.categories.index')}}">Category</a>
+    </li>
+  </ul>
+</div>
+
 <div class="row">
   <div class="col-md-12">
     <!-- Begin: life time stats -->
@@ -9,33 +25,7 @@
         <div class="caption">
           <i class="fa fa-gift"></i>category
         </div>
-        <div class="actions">
-          <div class="btn-group">
-            <a class="btn default yellow-stripe" href="#" data-toggle="dropdown">
-              <i class="fa fa-share"></i> Tools <i class="fa fa-angle-down"></i>
-            </a>
-            <ul class="dropdown-menu pull-right">
-              <li>
-                <a href="#">
-                  Export to Excel </a>
-              </li>
-              <li>
-                <a href="#">
-                  Export to CSV </a>
-              </li>
-              <li>
-                <a href="#">
-                  Export to XML </a>
-              </li>
-              <li class="divider">
-              </li>
-              <li>
-                <a href="#">
-                  Print Invoices </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+
       </div>
       <div class="portlet-body">
         <div class="table-container" style="">
@@ -57,129 +47,121 @@
               </div>
               <div class="col-md-4 col-sm-12">
                 <div class="table-group-actions pull-right">
-                  <span></span>
-                  <select class="table-group-action-input form-control input-inline input-small input-sm">
-                    <option value="">Select...</option>
-                    <option value="publish">Publish</option>
-                    <option value="unpublished">Un-publish</option>
-                    <option value="delete">Delete</option>
-                  </select>
-                  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
+                  <a href="{{route('admin.categories.create')}}" class="btn green"><i class="fa fa-plus"></i> Add </a>
                 </div>
               </div>
-            </div>
-            <div class="table-scrollable">
-              <table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable_products" aria-describedby="datatable_products_info" role="grid">
-                <thead>
-                  <tr role="row" class="heading">
-                    <th width="1%" class="sorting_disabled" rowspan="1" colspan="1">
-                      <div class="checker"><span class=""><input type="checkbox" class="group-checkable"></span></div>
-                    </th>
-                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      ID
-                    </th>
-                    <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Category&nbsp;Name
-                    </th>
-                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Quantity
-                    </th>
-                    <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Date&nbsp;Created
-                    </th>
-                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Status
-                    </th>
-                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Actions
-                    </th>
-                  </tr>
+              <div class="table-scrollable">
+                <table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable_products" aria-describedby="datatable_products_info" role="grid">
+                  <thead>
+                    <tr role="row" class="heading">
+                      <th width="1%" class="sorting_disabled" rowspan="1" colspan="1">
+                        <div class="checker"><span class=""><input type="checkbox" class="group-checkable"></span></div>
+                      </th>
+                      <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
+                        ID
+                      </th>
+                      <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
+                        Category&nbsp;Name
+                      </th>
+                      <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
+                        Quantity
+                      </th>
+                      <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
+                        Date&nbsp;Created
+                      </th>
+                      <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
+                        Status
+                      </th>
+                      <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
+                        Actions
+                      </th>
+                    </tr>
+                    <tr role="row" class="filter">
+                      <td rowspan="1" colspan="1">
+                      </td>
+                      <td rowspan="1" colspan="1">
+                        <input type="text" class="form-control form-filter input-sm" name="product_id">
+                      </td>
+                      <td rowspan="1" colspan="1">
+                        <input type="text" class="form-control form-filter input-sm" name="product_name">
+                      </td>
+                      <td rowspan="1" colspan="1">
+                        <select name="Quantity_category" class="form-control form-filter input-sm">
+                          <option value="1">&lt;50%</option>
+                          <option value="15">&gt;50%</option>
+                        </select>
+                      </td>
+                      <td rowspan="1" colspan="1">
+                        <div class="margin-bottom-5">
+                          <input type="text" class="form-control form-filter input-sm" name="product_price_from" placeholder="From">
+                        </div>
+                        <input type="text" class="form-control form-filter input-sm" name="product_price_to" placeholder="To">
+                      </td>
+                      <td rowspan="1" colspan="1">
+                        <select name="Status_category" class="form-control form-filter input-sm">
+                          <option value="1">hiện</option>
+                          <option value="15">ẩn</option>
+                        </select>
+                      </td>
+                      <td rowspan="1" colspan="1">
+
+                      </td>
+                    </tr>
+                  </thead>
+                  @foreach($categories as $category)
                   <tr role="row" class="filter">
                     <td rowspan="1" colspan="1">
                     </td>
                     <td rowspan="1" colspan="1">
-                      <input type="text" class="form-control form-filter input-sm" name="product_id">
+                      {{$category->id}}
                     </td>
-                    <td rowspan="1" colspan="1">
-                      <input type="text" class="form-control form-filter input-sm" name="product_name">
-                    </td>
-                    <td rowspan="1" colspan="1">
-                      <select name="Quantity_category" class="form-control form-filter input-sm">
-                        <option value="1">&lt;50%</option>
-                        <option value="15">&gt;50%</option>
-                      </select>
-                    </td>
-                    <td rowspan="1" colspan="1">
-                      <div class="margin-bottom-5">
-                        <input type="text" class="form-control form-filter input-sm" name="product_price_from" placeholder="From">
-                      </div>
-                      <input type="text" class="form-control form-filter input-sm" name="product_price_to" placeholder="To">
-                    </td>
-                    <td rowspan="1" colspan="1">
-                      <select name="Status_category" class="form-control form-filter input-sm">
-                        <option value="1">hiện</option>
-                        <option value="15">ẩn</option>
-                      </select>
-                    </td>
-                    <td rowspan="1" colspan="1">
 
+                    <td rowspan="1" colspan="1">
+                      {{$category->name}}
+                    </td>
+
+                    <td rowspan="1" colspan="1">
+                    </td>
+
+                    <td rowspan="1" colspan="1">
+                    </td>
+
+                    <td rowspan="1" colspan="1">
+                    </td>
+
+                    <td rowspan="1" colspan="1">
+                      <a href="#" class="btn btn-sm red">
+                        edit <i class="fa fa-edit"></i>
+                      </a>
+                      <a href="#" class="btn btn-sm purple">
+                        <i class="fa fa-times"></i> delete </a>
                     </td>
                   </tr>
-                </thead>
-                @foreach($categories as $category)
-                <tr role="row" class="filter">
-                  <td rowspan="1" colspan="1">
-                  </td>
-                  <td rowspan="1" colspan="1">
-                  {{$category->id}}
-                  </td>
-
-                  <td rowspan="1" colspan="1">
-                  {{$category->name}}
-                  </td>
-
-                  <td rowspan="1" colspan="1">
-                  </td>
-
-                  <td rowspan="1" colspan="1">
-                  </td>
-
-                  <td rowspan="1" colspan="1">
-                  </td>
-
-                  <td rowspan="1" colspan="1">
-                    <a href="#" class="btn btn-sm red">
-                      edit <i class="fa fa-edit"></i>
-                    </a>
-                    <a href="#" class="btn btn-sm purple">
-                      <i class="fa fa-times"></i> delete </a>
-                  </td>
-                </tr>
-                </thead>
-                @endforeach
-              </table>
-            </div>
-            <div class="row">
-              <div class="col-md-8 col-sm-12">
-                <div class="dataTables_paginate paging_bootstrap_extended">
-                  <div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div>
-                </div>
-                <div class="dataTables_length"><label><span class="seperator">|</span>View <select name="datatable_products_length" aria-controls="datatable_products" class="form-control input-xsmall input-sm input-inline">
-                      <option value="10">10</option>
-                      <option value="20">20</option>
-                      <option value="50">50</option>
-                      <option value="100">100</option>
-                      <option value="150">150</option>
-                    </select> records</label></div>
-                <div class="dataTables_info"></div>
+                  </thead>
+                  @endforeach
+                </table>
               </div>
-              <div class="col-md-4 col-sm-12"></div>
+              <div class="row">
+                <div class="col-md-8 col-sm-12">
+                  <div class="dataTables_paginate paging_bootstrap_extended">
+                    <div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div>
+                  </div>
+                  <div class="dataTables_length"><label><span class="seperator">|</span>View <select name="datatable_products_length" aria-controls="datatable_products" class="form-control input-xsmall input-sm input-inline">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                      </select> records</label></div>
+                  <div class="dataTables_info"></div>
+                </div>
+                <div class="col-md-4 col-sm-12"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- End: life time stats -->
     </div>
-    <!-- End: life time stats -->
   </div>
-</div>
-@endsection
+  @endsection

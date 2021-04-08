@@ -64,7 +64,7 @@
                     <option value="unpublished">Un-publish</option>
                     <option value="delete">Delete</option>
                   </select>
-                  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i> Submit</button>
+                  <button class="btn btn-sm yellow table-group-action-submit"><i class="fa fa-check"></i>add</button>
                 </div>
               </div>
             </div>

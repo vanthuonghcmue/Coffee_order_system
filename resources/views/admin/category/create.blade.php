@@ -2,73 +2,92 @@
 @section('content')
 <!-- BEGIN PAGE HEADER-->
 <h3 class="page-title">
-  Category
-  </h3>
-  <div class="page-bar">
-    <ul class="page-breadcrumb">
-      <li>
-        <i class="fa fa-home"></i>
-        <a href="index.html">Admin</a>
-        <i class="fa fa-angle-right"></i>
-      </li>
-      <li>
-        <a href="#">Category</a>
-        <i class="fa fa-angle-right"></i>
-      </li>
-      <li>
-        <a href="#">New</a>
-      </li>
-    </ul>
-    <div class="page-toolbar">
-      <div class="btn-group pull-right">
-        <button type="button" class="btn btn-fit-height grey-salt dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
-        Actions <i class="fa fa-angle-down"></i>
-        </button>
-        <ul class="dropdown-menu pull-right" role="menu">
-          <li>
-            <a href="#">Action</a>
-          </li>
-        </ul>
+  Category <small>Create Category</small>
+</h3>
+<div class="page-bar">
+  <ul class="page-breadcrumb">
+    <li>
+      <i class="fa fa-home"></i>
+      <a href="index.html">Home</a>
+      <i class="fa fa-angle-right"></i>
+    </li>
+    <li>
+      <a href="{{route('admin.categories.index')}}">Create</a>
+    </li>
+  </ul>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <form class="form-horizontal form-row-seperated" role="form" method="POST" enctype="multipart/form-data" action="{{route('admin.categories.store')}}">
+      @csrf
+      <div class="portlet">
+
+        <div class="portlet-title">
+          <div class="caption">
+            <i class="fa fa-shopping-cart"></i>Create Category
+          </div>
+          <div class="actions btn-set">
+            <div class="btn-group">
+              <button id="sample_editable_1_new" name="Back" class="btn while" type="button"><i class="fa fa-angle-left"></i> Back</button>
+            </div>
+            <div class="btn-group">
+              <button id="sample_editable_1_new" name="Save" class="btn green" type="submit"><i class="fa fa-check"></i> Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="portlet-body">
+          <div class="tabbable">
+            <div class="tab-content no-space">
+              <div class="tab-pane active" id="tab_general">
+                <div class="form-body">
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Category Name: <span class="required">
+                        * </span>
+                    </label>
+                    <div class="col-md-10">
+                      <input type="text" class="form-control" name="Name" placeholder="">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Quantity: <span class="required">
+                        * </span>
+                    </label>
+                    <div class="col-md-10">
+                      <input class="form-control" name="Quantity"></input>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Status<span class="required">
+                        * </span>
+                    </label>
+                    <div class="col-md-10">
+                      <select class="table-group-action-input form-control input-medium" name="Status">
+                        <option value="0">Hiện</option>
+                        <option value="1">Ẩn</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Description: <span class="required">
+                        * </span>
+                    </label>
+                    <div class="col-md-10">
+                      <textarea class="form-control" name="Description"></textarea>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </form>
   </div>
-<!-- END PAGE HEADER-->
-
-<form role="form" method="POST" enctype="multipart/form-data" action="{{ route('admin.categories.store') }}">
-  @csrf
-  <div class="form-body">
-    <div class="form-group @error('name') has-error @enderror">
-      <label class="control-label">Name</label>
-      @if ($errors->first('name'))
-          <p class="text-danger"> {{ $errors->first('name') }} </p>
-      @endif
-      <div class="input-icon right">
-        <input type="text" class="form-control" name="name" value="{{ old('name') }}">
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label">Parent</label>
-      <div>
-        <select name="parent_id" value="{{ old('parent_id') }}">
-          @foreach ($categories as $category)
-          <option value="{{ $category->id }}">{{ $category->name }}</option>
-          @endforeach
-        </select>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label">Image</label>
-      <div class="input-icon right">
-        <input type="file" class="form-control" name="image">
-      </div>
-    </div>
-  </div>
-
-  <div class="form-actions right">
-    <button type="button" class="btn default">Cancel</button>
-    <button type="submit" class="btn green">Submit</button>
-  </div>
-</form>
+</div>
 @endsection

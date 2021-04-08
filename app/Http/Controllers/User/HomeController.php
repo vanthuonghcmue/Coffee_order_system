@@ -5,7 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
-class ProductController extends Controller
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,7 @@ class ProductController extends Controller
     {
         $products = Product::paginate(self::ITEM_PER_PAGE);
         // $sizes = Size::paginate(self::ITEM_PER_PAGE);
-        return view('user.home', compact('products')); 
+        return view('layouts.home', compact('products')); 
     }
 
     /**
