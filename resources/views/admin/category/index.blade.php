@@ -25,11 +25,9 @@
         <div class="caption">
           <i class="fa fa-gift"></i>category
         </div>
-
       </div>
       <div class="portlet-body">
         <div class="table-container" style="">
-
           <div id="datatable_products_wrapper" class="dataTables_wrapper dataTables_extended_wrapper no-footer">
             <div class="row">
               <div class="col-md-8 col-sm-12">
@@ -63,50 +61,20 @@
                       <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
                         Category&nbsp;Name
                       </th>
-                      <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
+                      <th width="5%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
                         Quantity
-                      </th>
-                      <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                        Date&nbsp;Created
                       </th>
                       <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
                         Status
                       </th>
                       <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
+                        Date&nbsp;Updated
+                      </th>
+                      <th width="20%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
                         Actions
                       </th>
                     </tr>
-                    <tr role="row" class="filter">
-                      <td rowspan="1" colspan="1">
-                      </td>
-                      <td rowspan="1" colspan="1">
-                        <input type="text" class="form-control form-filter input-sm" name="product_id">
-                      </td>
-                      <td rowspan="1" colspan="1">
-                        <input type="text" class="form-control form-filter input-sm" name="product_name">
-                      </td>
-                      <td rowspan="1" colspan="1">
-                        <select name="Quantity_category" class="form-control form-filter input-sm">
-                          <option value="1">&lt;50%</option>
-                          <option value="15">&gt;50%</option>
-                        </select>
-                      </td>
-                      <td rowspan="1" colspan="1">
-                        <div class="margin-bottom-5">
-                          <input type="text" class="form-control form-filter input-sm" name="product_price_from" placeholder="From">
-                        </div>
-                        <input type="text" class="form-control form-filter input-sm" name="product_price_to" placeholder="To">
-                      </td>
-                      <td rowspan="1" colspan="1">
-                        <select name="Status_category" class="form-control form-filter input-sm">
-                          <option value="1">hiện</option>
-                          <option value="15">ẩn</option>
-                        </select>
-                      </td>
-                      <td rowspan="1" colspan="1">
 
-                      </td>
-                    </tr>
                   </thead>
                   @foreach($categories as $category)
                   <tr role="row" class="filter">
@@ -121,39 +89,34 @@
                     </td>
 
                     <td rowspan="1" colspan="1">
+                      {{$category->quantity}}
+
                     </td>
 
                     <td rowspan="1" colspan="1">
+                      {{$category->status== 0 ? 'Ẩn': 'Hiện'}}
+
                     </td>
 
                     <td rowspan="1" colspan="1">
+                      {{$category->updated_at}}
                     </td>
 
                     <td rowspan="1" colspan="1">
-                      <a href="#" class="btn btn-sm red">
+                      <a href="{{ route('admin.categories.edit', $category->id) }}" class="btn btn-sm red">
                         edit <i class="fa fa-edit"></i>
                       </a>
-                      <a href="#" class="btn btn-sm purple">
+                      <a href="{{ route('admin.categories.destroy', $category->id) }}" class="btn btn-sm purple">
                         <i class="fa fa-times"></i> delete </a>
                     </td>
                   </tr>
-                  </thead>
+
                   @endforeach
                 </table>
               </div>
               <div class="row">
                 <div class="col-md-8 col-sm-12">
-                  <div class="dataTables_paginate paging_bootstrap_extended">
-                    <div class="pagination-panel"> Page <a href="#" class="btn btn-sm default prev disabled" title="Prev"><i class="fa fa-angle-left"></i></a><input type="text" class="pagination-panel-input form-control input-mini input-inline input-sm" maxlenght="5" style="text-align:center; margin: 0 5px;"><a href="#" class="btn btn-sm default next disabled" title="Next"><i class="fa fa-angle-right"></i></a> of <span class="pagination-panel-total"></span></div>
-                  </div>
-                  <div class="dataTables_length"><label><span class="seperator">|</span>View <select name="datatable_products_length" aria-controls="datatable_products" class="form-control input-xsmall input-sm input-inline">
-                        <option value="10">10</option>
-                        <option value="20">20</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                        <option value="150">150</option>
-                      </select> records</label></div>
-                  <div class="dataTables_info"></div>
+                  {{ $categories->links() }}
                 </div>
                 <div class="col-md-4 col-sm-12"></div>
               </div>

@@ -2,7 +2,7 @@
 @section('content')
 <!-- BEGIN PAGE HEADER-->
 <h3 class="page-title">
-  Category <small>Create Category</small>
+  Category <small>Edit Category</small>
 </h3>
 <div class="page-bar">
   <ul class="page-breadcrumb">
@@ -12,7 +12,7 @@
       <i class="fa fa-angle-right"></i>
     </li>
     <li>
-      <a href="{{route('admin.categories.index')}}">Create</a>
+      <a href="{{route('admin.categories.edit')}}">Edit</a>
     </li>
   </ul>
 </div>
@@ -29,17 +29,18 @@
           </div>
           @endif
           <div class="caption">
-            <i class="fa fa-shopping-cart"></i>Create Category
+            <i class="fa fa-shopping-cart"></i>edit Category
           </div>
           <div class="actions btn-set">
             <div class="btn-group">
-              <button id="sample_editable_1_new" name="Back" class="btn while" type="button"><i class="fa fa-angle-left"></i><a href="{{ route('admin.categories.index') }}">Back</a> </button>
+              <button id="sample_editable_1_new" name="Back" class="btn while" type="button"><i class="fa fa-angle-left"></i><a href="{{ route('admin.categories.index') }}"> Back </a> </button>
             </div>
             <div class="btn-group">
               <button id="sample_editable_1" name="Save" class="btn green" type="submit"><i class="fa fa-check"></i> Save</button>
             </div>
           </div>
         </div>
+
         <div class="portlet-body">
           <div class="tabbable">
             <div class="tab-content no-space">
