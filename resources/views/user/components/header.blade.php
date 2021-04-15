@@ -26,6 +26,7 @@
           <li><a href="#chefs">Chefs</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href= "{{route('user.products.showProduct')}}">Product</a></li>
           <li class="book-a-table text-center"><a href="#book-a-table">Login</a></li>
         </ul>
       </nav><!-- .nav-menu -->
