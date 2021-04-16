@@ -27,14 +27,12 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
         @if (Auth::check())
+        <li class="book-a-table text-center">
         <form method="POST" action="{{ route('logout') }}">
           @csrf
-
-          <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-            {{ __('Log out') }}
-          </x-dropdown-link>
+                <a href=""><button type="submit">Logout</button></a>
         </form>
+        </li>
         @else
         <li class="book-a-table text-center"><a href="{{route('login')}}">Login</a></li>
         @endif
