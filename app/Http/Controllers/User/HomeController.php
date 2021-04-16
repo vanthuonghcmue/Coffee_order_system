@@ -20,6 +20,14 @@ class HomeController extends Controller
         return view('layouts.home', compact('products')); 
     }
 
+    public function viewProduct()
+    {
+        $products = Product::paginate(self::ITEM_PER_PAGE);
+        // $sizes = Size::paginate(self::ITEM_PER_PAGE);
+        return view('layouts.product', compact('products')); 
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

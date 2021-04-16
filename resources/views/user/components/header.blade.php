@@ -38,6 +38,22 @@
         @endif
       </ul>
     </nav><!-- .nav-menu -->
+    
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href= "{{route('user.products.showProduct')}}">Product</a></li>
+          <li class="book-a-table text-center"><a href="#book-a-table">Login</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      
+    </div>
+  </header><!-- End Header -->
 
-  </div>
-</header><!-- End Header -->
