@@ -26,7 +26,19 @@
           <li><a href="#chefs">Chefs</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="book-a-table text-center"><a href="#book-a-table">Login</a></li>
+          @if (Auth::check())
+          <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <x-dropdown-link :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log out') }}
+                            </x-dropdown-link>
+                        </form>          </form>
+          @else
+          <li class="book-a-table text-center"><a href="{{route('login')}}">Login</a></li>
+          @endif
         </ul>
       </nav><!-- .nav-menu -->
       
