@@ -1,7 +1,7 @@
 <?php
 use App\Http\Controllers\User\HomeController;
+use App\Http\Controllers\User\ProductController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,5 +19,13 @@ Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth','verified'])->name('dashboard');
+
+
+Route::prefix('user')->name('user.')->group(function () {
+    Route::prefix('products')->name('products.')->group(function () {
+        Route::get('/showProduct', [ProductController::class, 'index'])->name('showProduct');
+        Route::get('/category/{id}',[ProductController::class,'SortByCategory']) ->name('category');
+    });
+});
 
 require __DIR__.'/auth.php';
