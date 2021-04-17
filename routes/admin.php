@@ -2,10 +2,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\Auth\LoginController;
 
-Route::get('/dashboard', function () {
-    return view('layouts.admin');
-});
+
+Route::get('admin/dashboard', function () {
+    return view('admin.dashboard.index');
+})->name('dashboard');
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::prefix('categories')->name('categories.')->group(function () {
@@ -27,3 +29,6 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/delete/{id}', [ProductController::class, 'destroy'])->name('destroy');
     });
 });
+
+Route::match(['get', 'post'], 'admin/login', [LoginController::class, 'login'])->name('admin.login');
+Route::get('admin/logout', [LoginController::class, 'destroy'])->name('admin.logout');

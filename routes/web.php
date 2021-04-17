@@ -16,9 +16,6 @@ require __DIR__.'/admin.php';
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
 
 Route::prefix('user')->name('user.')->group(function () {
