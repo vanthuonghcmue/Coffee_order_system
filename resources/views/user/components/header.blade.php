@@ -24,20 +24,21 @@
         <li><a href="#chefs">Chefs</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href= "{{route('user.products.showProduct')}}">Product</a></li>
+        <li><a href="{{route('user.products.showProduct')}}">Product</a></li>
         @if (Auth::check())
-        <li class="book-a-table text-center">
-        <form method="POST" action="{{ route('logout') }}">
-          @csrf
-                <a href=""><button type="submit">Logout</button></a>
-        </form>
+        <li class="dropdown dropdown-right active open ">
+          <a href="#" class="dropdown-toggle " data-toggle="dropdown" aria-expanded="true">{{Auth::user()->name }} <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" style="background-color: #000000;">
+            <li class=""><a href="{{route('user.profile.show')}}" class="">My Profile <img src="https://secure.gravatar.com/avatar/e524b5a519936d173d8dda6b9268af51?s=100&amp;r=g&amp;d=mm" width="18px" class="pull-right"></a></li>
+            <li class=""><a href="#" class="">Favorited Snippets <span class="pull-right glyphicon glyphicon-star"></span></a></li>
+            <li class=""><a href="#" class="">Settings <span class="pull-right glyphicon glyphicon-cog"></span></a></li>
+            <li><a href="{{route('logout')}}" class="">Logout <span class="pull-right glyphicon glyphicon-log-out"></span></a></li>
+          </ul>
         </li>
         @else
         <li class="book-a-table text-center"><a href="{{route('login')}}">Login</a></li>
         @endif
       </ul>
     </nav><!-- .nav-menu -->
-  
-    </div>
-  </header><!-- End Header -->
-
+  </div>
+</header><!-- End Header -->
