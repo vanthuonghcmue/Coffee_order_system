@@ -14,21 +14,15 @@ class ProductController extends Controller
     const ITEM_PER_PAGE = 12;
     public function Index()
     {
-        
-
         $products = Product::paginate(self::ITEM_PER_PAGE);
-
         $category = Category::all();
-       
-        return view('layouts.product', compact('products','category')); 
+        return view('layouts.product', compact('products', 'category'));
     }
 
-   public function SortByCategory($id){
-        $products = Product::where('IdCategory',$id) ->get();
-
+    public function SortByCategory($id)
+    {
+        $products = Product::where('IdCategory', $id)->get();
         $category = Category::all();
-    
-        return view('layouts.product', compact('products','category')); 
-   }
-   
+        return view('layouts.product', compact('products', 'category'));
+    }
 }
