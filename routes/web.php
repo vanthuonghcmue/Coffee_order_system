@@ -1,4 +1,6 @@
 <?php
+
+use App\Http\Controllers\User\CartController;
 use App\Http\Controllers\User\HomeController;
 use App\Http\Controllers\User\ProductController;
 use App\Http\Controllers\User\ProfileController;
@@ -13,14 +15,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-require __DIR__.'/admin.php';
 
-Route::get('/',[HomeController::class, 'index'])->name('home');
+require __DIR__ . '/admin.php';
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('user')->name('user.')->group(function () {
     Route::prefix('products')->name('products.')->group(function () {
         Route::get('/showProduct', [ProductController::class, 'index'])->name('showProduct');
-        Route::get('/category/{id}',[ProductController::class,'SortByCategory']) ->name('category');
+        Route::get('/category/{id}', [ProductController::class, 'SortByCategory'])->name('category');
     });
 });
 
@@ -32,4 +35,13 @@ Route::prefix('user')->name('user.')->group(function () {
     });
 });
 
-require __DIR__.'/auth.php';
+
+Route::prefix('user')->name('user.')->group(function () {
+    Route::prefix('cart')->name('cart.')->group(function () {
+        Route::get('/', [CartController::class, 'index'])->name('show');
+        Route::post('/add/{product}', [CartController::class, 'add'])->name('add');
+        Route::get('/remove/{id}', [CartController::class, 'remove'])->name('delete');
+        Route::post('/update/{id}', [CartController::class, 'update'])->name('update');
+    });
+});
+require __DIR__ . '/auth.php';
