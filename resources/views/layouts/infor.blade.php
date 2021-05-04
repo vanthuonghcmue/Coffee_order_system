@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="panel-body bio-graph-info">
-                        <h1>Edit your profile</h1>
+                        
                         <div class="row">
 
                             @yield('content')

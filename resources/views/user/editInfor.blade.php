@@ -21,26 +21,33 @@
 </div>
 @endsection
 @section('content')
-<form method="POST" action="{{route('user.profile.update')}}" enctype="multipart/form-data">
-@csrf
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email" value="{{Auth::user()->email }}" readonly>
+<div class="panel-body bio-graph-info">
+    <h1>Edit your profile</h1>
+
+    <form method="POST" action="{{route('user.profile.update')}}" enctype="multipart/form-data">
+        @csrf
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email" value="{{Auth::user()->email }}" readonly>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Name</label>
+                <input type="text" name="name" class="form-control" id="inputName" placeholder="Name" value="{{Auth::user()->name }}">
+            </div>
         </div>
-        <div class="form-group col-md-6">
-            <label for="inputPassword4">Name</label>
-            <input type="text" name="name" class="form-control" id="inputName" placeholder="Name" value="{{Auth::user()->name }}">
+
+        <div class="form-group">
+            <label for="inputAddress2">Phone</label>
+            <input type="text" name="phone" class="form-control" id="inputAddress2" placeholder="number phone" value="{{Auth::user()->phone}}">
         </div>
-    </div>
-    <div class="form-group">
-        <label for="inputAddress2">Phone</label>
-        <input type="text" name="phone" class="form-control" id="inputAddress2" placeholder="number phone" value="{{Auth::user()->phone}}">
-    </div>
-    <div class="form-group">
-        <label for="inputAddress2"> avatar</label>
-        <input type="file" name="avatar" class="form-control" id="inputAddress2" >
-    </div>
-    <button type="submit" class="btn btn-primary">Update</button>
-</form>
+
+        <div class="form-group">
+            <label for="inputAddress2"> avatar</label>
+            <input type="file" name="avatar" class="form-control" id="inputAddress2">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
 @endsection
