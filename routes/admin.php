@@ -1,7 +1,9 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\user\ProfileController;
 
@@ -32,10 +34,15 @@ Route::prefix('admin')->name('admin.')->group(function () {
 });
 
 Route::prefix('admin')->name('admin.')->group(function () {
+    Route::prefix('orders')->name('orders.')->group(function () {
+        Route::get('/', [OrderController::class, 'index'])->name('index');
+    });
+  });
+
+Route::prefix('admin')->name('admin.')->group(function () {
     Route::prefix('user-manage')->name('user.')->group(function () {
         Route::get('/', [ProfileController::class, 'show'])->name('show');
-       ;
-    });
+   });
 });
 
 Route::match(['get', 'post'], 'admin/login', [LoginController::class, 'login'])->name('admin.login');

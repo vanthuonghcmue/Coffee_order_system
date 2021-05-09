@@ -44,7 +44,7 @@
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a href="ecommerce_orders.html">
+                        <a href="{{route('admin.orders.index')}}">
                             <i class="icon-basket"></i>
                             Orders</a>
                     </li>
