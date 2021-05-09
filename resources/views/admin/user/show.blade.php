@@ -2,7 +2,7 @@
 @section('content')
 <!-- BEGIN PAGE HEADER-->
 <h3 class="page-title">
-  Product <small>Product listing</small>
+  user <small>user listing</small>
 </h3>
 <div class="page-bar">
   <ul class="page-breadcrumb">
@@ -13,7 +13,7 @@
     </li>
 
     <li>
-      <a href="{{route('admin.products.index')}}">Product</a>
+      <a href="">Product</a>
     </li>
   </ul>
 </div>
@@ -24,7 +24,7 @@
     <div class="portlet">
       <div class="portlet-title">
         <div class="caption">
-          <i class="fa fa-gift"></i> Products
+          <i class="fa fa-gift"></i> user
         </div>
 
         <div class="actions">
@@ -89,86 +89,66 @@
                       ID
                     </th>
                     <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Product&nbsp;Name
+                      User&nbsp;Name
                     </th>
                     <th width="5%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Size
+                      email
                     </th>
                     <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Price
+                      phone
                     </th>
                     <th width="5%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Status
-                    </th>
-                    <th width="20%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Describe
-                    </th>
-                    <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
-                      Date&nbsp;Updated
+                      order
                     </th>
                     <th width="20%" class="sorting" tabindex="0" aria-controls="datatable_products" rowspan="1" colspan="1">
                       Actions
                     </th>
                   </tr>
 
-                  @foreach($products as $product)
+                  @foreach($users as $user)
+                  
                   <thead>
                     <tr role="row" class="filter">
                       <td rowspan="1" colspan="1">
-                        <img src="{{('../../storage/app/product/'.$product->Img)}}" style="width: 60px; height: 60px;" alert="poto">
+                        <img src="{{('../../storage/app/'.$user->image)}}" style="width: 60px; height: 60px;" alert="poto">
                       </td>
 
                       <td rowspan="1" colspan="1">
-                        {{$product->id}}
+                        {{$user->id}}
                       </td>
 
                       <td rowspan="1" colspan="1">
-                        {{$product->name}}
+                        {{$user->name}}
                       </td>
 
                       <td rowspan="1" colspan="1">
-                        @foreach($sizes as $size)
-                          @if($size->product_name==$product->slug)
-                            {{$size->Size}}
-                          @endif
-                        @endforeach
+                        {{$user->email}}
                       </td>
 
                       <td rowspan="1" colspan="1">
-                        @foreach($sizes as $size)
-                          @if($size->product_name==$product->slug)
-                            {{number_format($size->Price)}} đ
-                          @endif
-                        @endforeach
+                        {{$user->phone}}
+                      </td>
+                     
+                      <td rowspan="1" colspan="1">
+                        
                       </td>
 
                       <td rowspan="1" colspan="1">
-                        {{$product->status == 0 ? 'ẩn' : 'Hiện'}}
-                      </td>
-
-                      <td rowspan="1" colspan="1">
-                        {{$product->Description}}
-                      </td>
-
-                      <td rowspan="1" colspan="1">
-                        {{$product->updated_at}}
-                      </td>
-
-                      <td rowspan="1" colspan="1">
-                        <a href="{{route('admin.products.edit', $product->id)}}" class="btn btn-sm red">
+                        <a href="" class="btn btn-sm red">
                           <i class="fa fa-edit"> </i> edit &nbsp;&nbsp;
                         </a>
-                        <a href="{{ route('admin.products.destroy', $product->id) }}" class="btn btn-sm purple">
+                        <a href="" class="btn btn-sm purple">
                           <i class="fa fa-times"></i> delete </a>
                       </td>
                     </tr>
                   </thead>
                   @endforeach
+                 
               </table>
             </div>
 
             <div class="row">
-              {{ $products->links() }}
+             
               <div class="col-md-4 col-sm-12"></div>
             </div>
 

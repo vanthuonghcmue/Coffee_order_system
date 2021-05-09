@@ -1630,7 +1630,7 @@ section {
 /* profile */
 body {
   color: #797979;
-  background: #f1f2f7;
+  background: #ffffff;
   font-family: 'Open Sans', sans-serif;
   padding: 0px !important;
   margin: 0px !important;
@@ -2003,4 +2003,20 @@ ul.summary-list > li:last-child  {
 
 .activity-desk .album a:last-child{
   margin-right: 0px;
+}
+/* product */
+.dropdown-menu>li>a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #fff;
+  white-space: nowrap;
+}
+.btn-group-lg>.btn, .edit{
+  /* padding: 10px 16px; */
+  /* font-size: 18px; */
+  line-height: 1.3333333;
+  /* border-radius: 6px; */
 }

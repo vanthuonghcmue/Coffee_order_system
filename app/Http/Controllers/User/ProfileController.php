@@ -16,6 +16,12 @@ class ProfileController extends Controller
         return view('user.profile');
     }
 
+    public function show()
+    {
+        $users= User::all();
+        return view('admin.user.show', compact('users'));
+    }
+
     public function edit()
     {
         return view('user.editInfor');

@@ -11,15 +11,14 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo mr-auto">
-            <h1 class="text-light"><a href="index.html"><span>Luxury</span></a></h1>
+            <h1 class="text-light"><a href="{{ route('home') }}"><span>Luxury</span></a></h1>
         </div>
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li ><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#specials">Specials</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#chefs">Chefs</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -29,13 +28,10 @@
                 @if (Auth::check())
                     <li class="dropdown dropdown-right active open ">
                         <a href="#" class="dropdown-toggle " data-toggle="dropdown"
-                            aria-expanded="true">{{ Auth::user()->name }} <span class="caret"></span></a>
+                            aria-expanded="true">{{ Auth::user()->name }} </a>
                         <ul class="dropdown-menu" role="menu" style="background-color: #000000;">
-                            <li class=""><a href="{{ route('user.profile.show') }}" class="">My Profile <img
-                                        src="https://secure.gravatar.com/avatar/e524b5a519936d173d8dda6b9268af51?s=100&amp;r=g&amp;d=mm"
-                                        width="18px" class="pull-right"></a></li>
-                            <li class=""><a href="#" class="">Favorited Snippets <span
-                                        class="pull-right glyphicon glyphicon-star"></span></a></li>
+                            <li class=""><a href="{{ route('user.profile.show') }}" class="">My Profile </a></li>
+                            <li class=""><a href="#" class="">Favorited Snippets </a></li>
                             <li class=""><a href="#" class="">Settings <span
                                         class="pull-right glyphicon glyphicon-cog"></span></a></li>
                             <li><a href="{{ route('logout') }}" class="">Logout <span

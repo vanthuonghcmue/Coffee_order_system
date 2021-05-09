@@ -34,15 +34,10 @@
 </head>
 
 <body>
-    <section id="advertisement">
-
-        <div class="container">
-            @include('user.components.header')
-            <img src="{{asset('user/img/bar.jpg')}}" alt="" />
-        </div>
-    </section>
-
-    
+    <header id="advertisement">
+        @include('user.components.header')
+        <img src="{{asset('user/img/bar.jpg')}}" alt="" />
+    </header>
 
     <main id="main">
         <section>

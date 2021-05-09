@@ -59,9 +59,9 @@
                             Products</a>
                     </li>
                     <li>
-                        <a href="ecommerce_products_edit.html">
-                            <i class="icon-pencil"></i>
-                            Product Edit</a>
+                        <a href="{{route('admin.user.show')}}">
+                            <i class="icon-user"></i>
+                            User</a>
                     </li>
                 </ul>
             </li>
