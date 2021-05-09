@@ -37,18 +37,18 @@
 
 							<ul class="dropdown-menu pull-right">
 								<li>
-									<a href="#">
-										Duplicate </a>
+									<a href="#"> icate </a>
 								</li>
+
 								<li>
-									<a href="#">
-										Delete </a>
+									<a href="#"> Delete </a>
 								</li>
+
 								<li class="divider">
 								</li>
+
 								<li>
-									<a href="#">
-										Print </a>
+									<a href="#"> Print </a>
 								</li>
 							</ul>
 						</div>
@@ -70,6 +70,7 @@
 						<div class="tab-content no-space">
 							<div class="tab-pane active" id="tab_general">
 								<div class="form-body">
+
 									<div class="form-group">
 										<label class="col-md-2 control-label">Name: <span class="required">
 												* </span>
@@ -78,6 +79,7 @@
 											<input type="text" class="form-control" name="Name" placeholder="">
 										</div>
 									</div>
+
 									<div class="form-group">
 										<label class="col-md-2 control-label">Description: <span class="required">
 												* </span>
@@ -86,6 +88,7 @@
 											<textarea class="form-control" name="Description"></textarea>
 										</div>
 									</div>
+
 									<div class="form-group">
 										<label class="col-md-2 control-label">discount: <span class="required">
 												* </span>
@@ -110,10 +113,12 @@
 												select one categories </span>
 										</div>
 									</div>
+
 									<div class="form-group">
 										<label class="col-md-2 control-label">Status: <span class="required">
 												* </span>
 										</label>
+
 										<div class="col-md-10">
 											<select class="table-group-action-input form-control input-medium" name="Status">
 												<option value="0">Ẩn</option>
@@ -121,6 +126,7 @@
 											</select>
 										</div>
 									</div>
+
 								</div>
 							</div>
 
@@ -129,6 +135,7 @@
 									<button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
 									<i class="fa fa-warning fa-lg"></i> Image type and information need to be specified.
 								</div>
+
 								<div id="tab_images_uploader_container" class="text-align-reverse margin-bottom-10" style="position: relative;">
 									<a id="tab_images_uploader_pickfiles" href="javascript:;" class="btn yellow" style="position: relative; z-index: 1;">
 										<i class="fa fa-plus"></i> Select Files </a>
@@ -136,9 +143,11 @@
 										<i class="fa fa-share"></i> Upload Files </a>
 									<div id="html5_1f2u6doc74k91rbd709duh96o3_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: hidden; z-index: 0;"><input id="html5_1f2u6doc74k91rbd709duh96o3" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept="image/jpeg,image/gif,image/png,application/zip"></div>
 								</div>
+
 								<div class="row">
 									<div id="tab_images_uploader_filelist" class="col-md-6 col-sm-12"></div>
 								</div>
+
 								<table class="table table-bordered table-hover">
 									<thead>
 										<tr role="row" class="heading">
@@ -156,6 +165,7 @@
 											</th>
 										</tr>
 									</thead>
+
 									<tbody>
 										<tr>
 											<td>
@@ -175,6 +185,7 @@
 
 											</td>
 										</tr>
+
 										<tr>
 											<td>
 												Size M
@@ -192,6 +203,7 @@
 												</div>
 											</td>
 										</tr>
+
 										<tr>
 											<td>
 												Size L

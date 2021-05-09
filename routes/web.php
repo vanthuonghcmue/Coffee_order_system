@@ -17,13 +17,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 require __DIR__ . '/admin.php';
+require __DIR__ . '/auth.php';
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('user')->name('user.')->group(function () {
     Route::prefix('products')->name('products.')->group(function () {
         Route::get('/showProduct', [ProductController::class, 'index'])->name('showProduct');
-        Route::get('/category/{id}', [ProductController::class, 'SortByCategory'])->name('category');
+        Route::get('/{id}', [ProductController::class, 'SortByCategory'])->name('category');
     });
 });
 
@@ -44,4 +45,4 @@ Route::prefix('user')->name('user.')->group(function () {
         Route::post('/update/{id}', [CartController::class, 'update'])->name('update');
     });
 });
-require __DIR__ . '/auth.php';
+
