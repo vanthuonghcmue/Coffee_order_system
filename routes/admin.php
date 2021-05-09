@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\Auth\LoginController;
+use App\Http\Controllers\user\ProfileController;
 
 
 Route::get('admin/dashboard', function () {
@@ -27,6 +28,13 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/edit/{id}', [ProductController::class, 'edit'])->name('edit');
         Route::post('/update/{id}', [ProductController::class, 'update'])->name('update');
         Route::get('/delete/{id}', [ProductController::class, 'destroy'])->name('destroy');
+    });
+});
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::prefix('user-manage')->name('user.')->group(function () {
+        Route::get('/', [ProfileController::class, 'show'])->name('show');
+       ;
     });
 });
 

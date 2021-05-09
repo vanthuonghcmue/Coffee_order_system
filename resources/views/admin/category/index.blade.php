@@ -94,7 +94,7 @@
                     </td>
 
                     <td rowspan="1" colspan="1">
-                      {{$category->status== 0 ? 'Ẩn': 'Hiện'}}
+                      {{$category->status== 1 ? 'Ẩn': 'Hiện'}}
 
                     </td>
 
@@ -103,7 +103,7 @@
                     </td>
 
                     <td rowspan="1" colspan="1">
-                      <a href="{{ route('admin.categories.edit', $category->id) }}" class="btn btn-sm red">
+                      <a href="{{route('admin.categories.edit', $category->id)}}" class="btn btn-sm red">
                         edit <i class="fa fa-edit"></i>
                       </a>
                       <a href="{{ route('admin.categories.destroy', $category->id) }}" class="btn btn-sm purple">
