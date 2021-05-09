@@ -1,7 +1,9 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 
 
@@ -27,6 +29,12 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/edit/{id}', [ProductController::class, 'edit'])->name('edit');
         Route::post('/update/{id}', [ProductController::class, 'update'])->name('update');
         Route::get('/delete/{id}', [ProductController::class, 'destroy'])->name('destroy');
+    });
+});
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::prefix('orders')->name('orders.')->group(function () {
+        Route::get('/', [OrderController::class, 'index'])->name('index');
     });
 });
 
