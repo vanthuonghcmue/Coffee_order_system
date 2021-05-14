@@ -51,7 +51,7 @@
 				<!-- END NOTIFICATION DROPDOWN -->
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				@if(Auth::guard('admin')->check()){
+				@if(Auth::guard('admin')->check())
 				<li class="dropdown dropdown-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 						<img alt="" class="img-circle" src="../../assets/admin/layout/img/avatar3_small.jpg" />
@@ -67,34 +67,18 @@
 						<li class="divider">
 						</li>
 						<li>
-							<a href="{{route('admin.logout')}}">
+							<a href="{{route('admin.logout')}}" >
 								<i class="icon-key"></i> Log Out </a>
 						</li>
 					</ul>
 				</li>
-				}
-				@else{
-					<li class="dropdown dropdown-user">
-					<a href="{{route('admin.login')}}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-						<img alt="" class="img-circle" src="../../assets/admin/layout/img/avatar3_small.jpg" />
+				@else
+				<li class="dropdown dropdown-user">
+					<a href="{{route('admin.login')}}" class="dropdown-toggle">
 						<span class="username username-hide-on-mobile">
 							Login </span>
-						<i class="fa fa-angle-down"></i>
 					</a>
-					<ul class="dropdown-menu dropdown-menu-default">
-						<li>
-							<a href="extra_profile.html">
-								<i class="icon-user"></i> My Profile </a>
-						</li>
-						<li class="divider">
-						</li>
-						<li>
-							<a href="login.html">
-								<i class="icon-key"></i> Log Out </a>
-						</li>
-					</ul>
 				</li>
-				}
 				@endif
 				<!-- END USER LOGIN DROPDOWN -->
 			</ul>
