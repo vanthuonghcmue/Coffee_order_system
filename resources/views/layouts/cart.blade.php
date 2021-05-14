@@ -245,7 +245,7 @@
                             <li>Shipping Cost <span>Free</span></li>
                             <li>Total <span>{{number_format($price)}}</span></li>
                         </ul>
-                        <a class="btn btn-default update" href="">Order</a>
+                        <a class="btn btn-default update" href="{{route('user.order.store')}}">Order</a>
                     </div>
                 </div>
             </div>
