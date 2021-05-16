@@ -29,7 +29,9 @@
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('user/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('user/css/order-style.css') }}" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
 
 <body>
     <header id="header" class=" d-flex align-items-center header-transparent" style="background-color:#000000;">

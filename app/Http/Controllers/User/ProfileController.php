@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use App\Models\Order_items;
+use App\Models\Order_item;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Order;
@@ -47,7 +47,7 @@ class ProfileController extends Controller
     public function ShowOrderList()
     {
         $orderlist = Order::where('id_user', Auth::user()->id)->get();
-        $order_item = Order_items::all();
+        $order_item = Order_item::all();
         return view('user.orderlist', compact('orderlist', 'order_item'));
     }
 }
