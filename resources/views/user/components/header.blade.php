@@ -16,7 +16,7 @@
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-                <li ><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#events">Events</a></li>
@@ -32,6 +32,7 @@
                         <ul class="dropdown-menu" role="menu" style="background-color: #000000;">
                             <li class=""><a href="{{ route('user.profile.show') }}" class="">My Profile </a></li>
                             <li class=""><a href="#" class="">Favorited Snippets </a></li>
+                            <li class=""><a href="{{ route('user.profile.order') }}" class="">Ordered</a></li>
                             <li class=""><a href="#" class="">Settings <span
                                         class="pull-right glyphicon glyphicon-cog"></span></a></li>
                             <li><a href="{{ route('logout') }}" class="">Logout <span

@@ -125,88 +125,52 @@
                                     </div>
                                 </div>
                             </div>
+
+
+
                             <div class="table-scrollable">
                                 <table class="table table-striped table-bordered table-hover dataTable no-footer"
                                     id="datatable_products" aria-describedby="datatable_products_info" role="grid">
                                     <thead>
                                         <tr role="row" class="heading">
-                                            <th width="5%%" class="sorting_disabled" rowspan="1" colspan="1">
-                                                ID
-                                            </th>
-                                            <th width="5%" class="sorting" tabindex="0" aria-controls="datatable_products"
-                                                rowspan="1" colspan="1">
-                                                IDuser
-                                            </th>
-                                            <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products"
-                                                rowspan="1" colspan="1">
-                                                Username
-                                            </th>
-                                            <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products"
-                                                rowspan="1" colspan="1">
-                                                Total Price
-                                            </th>
-
-                                            <th width="20%" class="sorting" tabindex="0" aria-controls="datatable_products"
-                                                rowspan="1" colspan="1">
-                                                Create at
-
-                                            <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products"
-                                                rowspan="1" colspan="1">
-                                                Update at
-                                            </th>
-
-                                            <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products"
-                                                rowspan="1" colspan="1">
-                                                Status
+                                            <th width="20%%" class="sorting_disabled" rowspan="1" colspan="1">
+                                                Product name
                                             </th>
                                             <th width="10%" class="sorting" tabindex="0" aria-controls="datatable_products"
                                                 rowspan="1" colspan="1">
-                                                Actions
+                                                Quantity
                                             </th>
+                                            <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products"
+                                                rowspan="1" colspan="1">
+                                                Size
+                                            </th>
+                                            <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products"
+                                                rowspan="1" colspan="1">
+                                                Topping
+                                            </th>
+                                            <th width="15%" class="sorting" tabindex="0" aria-controls="datatable_products"
+                                                rowspan="1" colspan="1">
+                                                Price
                                         </tr>
 
-                                        @foreach ($orders as $order)
-                                            <thead>
+                                        @foreach ($order_items as $items)
 
+                                            <thead>
                                                 <tr role="row" class="filter">
                                                     <td rowspan="1" colspan="1">
-                                                        {{ $order->id }}
-                                                    </td>
-
-                                                    <td rowspan="1" colspan="1">
-                                                        {{ $order->id_user }}
-                                                    </td>
-
-                                                    <td rowspan="1" colspan="1">
-                                                        @foreach ($users as $user)
-                                                            @if ($user->id == $order->id_user)
-                                                                {{ $user->name }}
-                                                            @endif
-                                                        @endforeach
-
+                                                        {{ $items->product_name }}
                                                     </td>
                                                     <td rowspan="1" colspan="1">
-                                                        {{ $order->total_price }}
-                                                    </td>
-
-                                                    <td rowspan="1" colspan="1">
-                                                        {{ $order->created_at }}
-                                                    </td>
-
-
-                                                    <td rowspan="1" colspan="1">
-                                                        {{ $order->updated_up }}
+                                                        {{ $items->quantily }}
                                                     </td>
                                                     <td rowspan="1" colspan="1">
-                                                        {{ $order->status }}
-
+                                                        {{ $items->size }}
                                                     </td>
-
                                                     <td rowspan="1" colspan="1">
-                                                        <a href="{{ route('admin.orders.detail',$order->id ) }}" class="btn btn-sm red">
-                                                            <i class="fa fa-edit"> </i> detail &nbsp;&nbsp;
-                                                        </a>
-
+                                                        {{ $items->topping == null ? 'Không' : $items->topping }}
+                                                    </td>
+                                                    <td rowspan="1" colspan="1">
+                                                        {{ $items->price }}
                                                     </td>
                                                 </tr>
                                             </thead>
