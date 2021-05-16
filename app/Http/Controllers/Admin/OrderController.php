@@ -22,4 +22,12 @@ class OrderController extends Controller
         $users = User::all();
         return view('admin.order.index', compact('orders', 'order_items', 'users'));
     }
+    public function ShowDetail($id)
+    {
+
+        $order_items = Order_items::where('id_order', $id)->get();
+        // die($order_items);
+
+        return view('admin.order.orderdetail', compact('order_items'));
+    }
 }
