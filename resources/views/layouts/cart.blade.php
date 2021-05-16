@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="{{ asset('user/vendor/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('user/vendor/css/font-awesome.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('user/vendor/css/prettyPhoto.css') }}" rel="stylesheet">
-    <link href="{{ asset('user/vendor/css/price-range.css') }}" rel="stylesheet">
-    <link href="{{ asset('user/vendor/css/animate.css') }}" rel="stylesheet">
-    <link href="{{ asset('user/vendor/css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('user/vendor/css/responsive.css') }}" rel="stylesheet">
+    <link href="{{asset('user/vendor/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('user/vendor/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('user/vendor/css/prettyPhoto.css')}}" rel="stylesheet">
+    <link href="{{asset('user/vendor/css/price-range.css')}}" rel="stylesheet">
+    <link href="{{asset('user/vendor/css/animate.css')}}" rel="stylesheet">
+    <link href="{{asset('user/vendor/css/main.css')}}" rel="stylesheet">
+    <link href="{{asset('user/vendor/css/responsive.css')}}" rel="stylesheet">
     <title>Delicious Bootstrap Template - Index</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -18,32 +18,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- Vendor CSS Files -->
-
+    <link href="{{asset('user/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('user/vendor/icofont/icofont.min.css" rel="stylesheet')}}">
+    <link href="{{asset('user/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+    <link href="{{asset('user/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('user/vendor/venobox/venobox.css" rel="stylesheet')}}">
+    <link href="{{asset('user/vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('user/css/style.css')}}" rel="stylesheet">
 
 </head>
 
 
 <body>
+    <header id="advertisement">
+        @include('user.components.header')
+        <img src="{{asset('user/img/bar.jpg')}}" alt="" />
+    </header>
 
     <!--/header-->
-
+   
     <section id="cart_items">
         <div class="container">
-            <div class="breadcrumbs">
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active">Shopping Cart</li>
-                </ol>
-            </div>
             <div class="table-responsive cart_info">
                 <table class="table table-condensed">
+                @if (session('notice'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('notice') }}
+                </div>
+                @endif
                     <thead>
                         <tr class="cart_menu">
                             <td class="image">Hinh </td>
@@ -245,19 +253,29 @@
                             <li>Shipping Cost <span>Free</span></li>
                             <li>Total <span>{{number_format($price)}}</span></li>
                         </ul>
-                        <a class="btn btn-default update" href="">Order</a>
+                        <a class="btn btn-default update" href="{{route('user.order.store')}}">Order</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--/#do_action-->
-
+    @include('user.components.footer')
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <script src="{{asset('user/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('user/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('user/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+    <script src="{{asset('user/vendor/php-email-form/validate.js')}}"></script>
+    <script src="{{asset('user/vendor/jquery-sticky/jquery.sticky.js')}}"></script>
+    <script src="{{asset('user/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script src="{{asset('user/vendor/venobox/venobox.min.js')}}"></script>
+    <script src="{{asset('user/vendor/owl.carousel/owl.carousel.min.js')}}"></script>44
+    <!-- Template Main JS File -->
+    <script src="{{asset('user/js/main.js')}}"></script>
 </body>
 
 </html>
