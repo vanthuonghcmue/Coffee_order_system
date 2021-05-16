@@ -23,7 +23,7 @@ class CartController extends Controller
                 $price_topping =  $product['topping'] ? Topping::where('Idtopping', $product['topping'] )->first()->price : 0;
                 $discount > 0 ? $price+=$price_product-$price_product*$discount/100+$price_topping :$price+=$price_product + $price_topping;
                 $cart = session()->get('cart');
-                $cart[$id]["price"] =  $price_product;
+                $cart[$id]["price"] =  $price_product-$price_product*$discount/100;
                 session()->put('cart', $cart);
                
             }
