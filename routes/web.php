@@ -33,6 +33,7 @@ Route::prefix('user')->name('user.')->group(function () {
         Route::get('/', [ProfileController::class, 'index'])->name('show');
         Route::get('/edit', [ProfileController::class, 'edit'])->name('edit');
         Route::post('/update', [ProfileController::class, 'update'])->name('update');
+        Route::get('/order', [ProfileController::class, 'showorderlist'])->name('order');
     });
 });
 
@@ -45,4 +46,3 @@ Route::prefix('user')->name('user.')->group(function () {
         Route::post('/update/{id}', [CartController::class, 'update'])->name('update');
     });
 });
-
