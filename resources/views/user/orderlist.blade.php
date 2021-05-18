@@ -27,44 +27,75 @@
     <div class="panel-body bio-graph-info">
         <h1>Ordered</h1>
 
-        @foreach ($orderlist as $orders)
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel">
-                        <div class="panel-body">
-                            <div class="bio-chart">
-                                <div style="display:inline;width:100px;height:100px;"><canvas width="100"
-                                        height="100px"></canvas><input class="knob" data-width="100" data-height="100"
-                                        data-displayprevious="true" data-thickness=".2" value="{{ $orders->id }}"
-                                        data-fgcolor="#e06b7d" data-bgcolor="#e8e8e8"
-                                        style="width: 54px; height: 33px; position: absolute; vertical-align: middle; margin-top: 33px; margin-left: -77px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 20px; line-height: normal; font-family: Arial; text-align: center; color: rgb(224, 107, 125); padding: 0px; -webkit-appearance: none; background: none;">
-                                </div>
-                            </div>
-                            <div class="bio-desk">
-                                <h4 class="red">Time: {{ $orders->created_at }}</h4>
-
-                                <p>Total Price: {{ $orders->total_price }}</p>
-                                <p style="background-color:rgba(234, 253, 164, 0.46)">Status:
-                                    {{ $orders->status == 0 ? 'Chưa hoàn thành' : 'Đã hoàn thành' }}</p>
-                                <h4 class="" style="color:rgb(18, 119, 174)">Detail</h4>
-
-                                @foreach ($order_item as $item)
-                                    @if ($item->id_order == $orders->id)
-                                        <p>{{ $item->product_name }} Quantity: {{ $item->quantily }} Size:
-                                            {{ $item->size }} Topping:
-                                            {{ $item->topping == null ? 'khong' : $item->topping }} Price:
-                                            {{ $item->price }} </p>
-                                    @endif
-                                @endforeach
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        @endforeach
 
     </div>
+
+    @foreach ($orderlist as $orders)
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <td>
+                                    <h3>ID:{{ $orders->id }}</h3>  
+                                </td>
+                                <td colspan="3">
+                                    <h4>Date: {{ $orders->created_at }}</h4>
+                                </td>
+                                <td>
+                                    <h3>Total: </h3>
+                                </td>
+                                <td class="text-right">
+                                    <h3><strong>{{ $orders->total_price }} VNĐ</strong></h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th class="text-center">Size</th>
+                                <th class="text-center">Topping</th>
+                                <th class="text-center" colspan="2">Price</th>
+
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($order_item as $item)
+                                @if ($item->id_order == $orders->id)
+                                    <tr>
+                                        <td class="col-md-6">
+                                            <div class="media">
+                                                <a class="thumbnail pull-left" href="#"> <img class="media-object"
+                                                        src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png"
+                                                        style="width: 72px; height: 72px;"> </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading"><a href="#">{{ $item->product_name }}</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="col-md-1" style="text-align: center">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                value="{{ $item->quantily }}">
+                                        </td>
+                                        <td class="col-md-1 text-center"><strong> {{ $item->size }}</strong></td>
+                                        <td class="col-md-1 text-center">
+                                            <strong>{{ $item->topping == null ? 'khong' : $item->topping }} </strong>
+                                        </td>
+                                        <td class="col-md-1 text-center" colspan="2"><strong>{{ $item->price }}
+                                                vnđ</strong></td>
+
+
+                                    </tr>
+                                @endif
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    @endforeach
+
+
 @endsection
